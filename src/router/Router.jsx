@@ -1,9 +1,9 @@
 import React from 'react'
-import { createBrowserRouter } from 'react-router'
-import { RouterProvider } from 'react-router'
+import { createBrowserRouter, RouterProvider } from 'react-router'
 import App from '../pages/App'
 import Home from '../pages/home/Home'
 import Contact from '../pages/contact/Contact'
+import Post from '../pages/post/Post'
 
 const router = createBrowserRouter([
   {
@@ -17,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         Component: Contact
+      },
+      {
+        path: 'post/:id',
+        Component: Post
       }
     ]
   }
