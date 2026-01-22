@@ -21,11 +21,11 @@ const Home = () => {
               <p className='text-light text-sm flex flex-col'>Fiscalía y delegación de EEUU hablan para fortalecer el combate al narcotráfico<span className='text-[12px] text-gray-400 mt-2'>12/ene/2025</span></p>
               <img src='https://erbol.com.bo/sites/default/files/fiscalia-eeuu.jpg' alt='' className='h-[100px] w-[100px] object-cover hover:scale-110 transition-all' />
             </li>
-            <li className='flex items-center border-b border-gray-800 pb-4'>
+            <li className='flex items-center gap-2 border-b border-gray-800 pb-4'>
               <p className='text-light text-sm flex flex-col'>Fiscalía y delegación de EEUU hablan para fortalecer el combate al narcotráfico<span className='text-[12px] text-gray-400 mt-2'>12/ene/2025</span></p>
               <img src='https://erbol.com.bo/sites/default/files/fiscalia-eeuu.jpg' alt='' className='h-[100px] w-[100px] object-cover hover:scale-110 transition-all' />
             </li>
-            <li className='flex items-center border-b border-gray-800 pb-4'>
+            <li className='flex items-center gap-2 border-b border-gray-800 pb-4'>
               <p className='text-light text-sm flex flex-col'>Fiscalía y delegación de EEUU hablan para fortalecer el combate al narcotráfico<span className='text-[12px] text-gray-400 mt-2'>12/ene/2025</span></p>
               <img src='https://erbol.com.bo/sites/default/files/fiscalia-eeuu.jpg' alt='' className='h-[100px] w-[100px] object-cover hover:scale-110 transition-all' />
             </li>
