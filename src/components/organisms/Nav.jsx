@@ -5,7 +5,7 @@ const Nav = () => {
       <header className='text-light border-b border-gray-800 flex justify-center items-center'>
         <nav className='max-w-[1200px] w-3/4 flex justify-between items-center py-4'>
           <div className='w-52'>
-            <img src={logo} alt='' srcset='' />
+            <a href='/'><img src={logo} alt='' srcset='' /></a>
           </div>
           <ul className='flex gap-3 font-black'>
             <li className='hover:bg-gray-950 px-3 py-2 rounded-xl transition-transform duration-100 ease-in-out'>Sobre nosotros</li>
