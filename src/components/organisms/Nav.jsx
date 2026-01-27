@@ -1,11 +1,21 @@
+import { useState, useEffect } from 'react'
 import logo from '../../assets/logo.webp'
+
 const Nav = () => {
+  const [marquee, setMarquee] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3000/marquees')
+      .then(response => response.json())
+      .then(data => setMarquee(data))
+  }, [])
+
   return (
     <>
       <header className='text-light border-b border-gray-800 flex justify-center items-center'>
         <nav className='max-w-[1200px] w-3/4 flex justify-between items-center py-4'>
           <div className='w-52'>
-            <a href='/'><img src={logo} alt='' srcset='' /></a>
+            <a href='/'><img src={logo} alt='' /></a>
           </div>
           <ul className='flex gap-3 font-black'>
             <li className='hover:bg-gray-950 px-3 py-2 rounded-xl transition-transform duration-100 ease-in-out'>Sobre nosotros</li>
@@ -20,9 +30,14 @@ const Nav = () => {
           </div>
         </nav>
       </header>
-      <section className='border-b border-gray-800 flex justify-center'>
-        <div className='max-w-[1200px] w-3/4 py-1'>
-          <p className='text-light font-light'><span className='text-primary mr-4'>URGENTE </span> Trump anuncia el ‘marco para un futuro acuerdo’ respecto a Groenlandia</p>
+      <section className='max-w-[1200px] w-3/4 border-b border-gray-800 my-o mx-auto flex'>
+        <div className='h-8 py-1 flex'>
+          <span className='text-primary mr-4'>URGENTE </span>
+          <div className='overflow-hidden'>
+            {marquee.map((item, index) => (
+              <p key={index} className='text-light font-light'>{item.content}</p>
+            ))}
+          </div>
         </div>
       </section>
     </>
