@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Featured from '../../components/organisms/Featured'
 import FeaturedSport from '../../components/organisms/FeaturedSport'
+import Video from '../../components/organisms/Video'
 
 const Home = () => {
   const [hero, setHero] = useState([])
@@ -56,6 +57,7 @@ const Home = () => {
           <button className='bg-gray-950 text-light py-3 mt-4 cursor-pointer hover:text-primary hover:rounded-2xl transition-all'>Más artículos</button>
         </aside>
       </main>
+      <Video />
       <Featured />
       <FeaturedSport />
     </>
